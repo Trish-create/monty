@@ -27,10 +27,18 @@ void free_stack(stack_t *stack)
  */
 void (*get_op_func(char *opcode))(stack_t **, unsigned int)
 {
-	instruction_t instructions[] = {
-		{"push", op_push},
-		{"pall", op_pall},
-		{NULL, NULL}
+
+instruction_t instructions[] = {
+    {"push", op_push},
+    {"pall", op_pall},
+    {"pint", op_pint},
+    {"pop", op_pop},
+    {"swap", op_swap},
+    {"add", op_add},
+    {"div", op_div},
+    {"nop", op_nop},
+    {NULL, NULL}
+}; 
 	};
 	int i = 0;
 
