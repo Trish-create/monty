@@ -39,7 +39,7 @@ instruction_t instructions[] = {
     {"nop", op_nop},
     {NULL, NULL}
 }; 
-	};
+	
 	int i = 0;
 
 	while (instructions[i].opcode)
